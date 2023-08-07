@@ -2,6 +2,9 @@ import Papa from 'papaparse'; // minified file for production
 
 import { GenericRow, Result } from './result';
 
+/**
+ * Uses the production (minified) version of papaparse.
+ */
 export const loadCsvFile = (file: File) => {
   return new Promise<Result>((resolve, reject) => {
     const result: Result = {
